@@ -79,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
         long minute = (durationInMillis / (1000 * 60)) % 60;
         long hour = (durationInMillis / (1000 * 60 * 60)) % 24;
 
-        String time = String.format("%02d:%02d:%02d:%03d", hour, minute, second, millis);
-
-        return time;
+        return String.format("%02d:%02d:%02d:%03d", hour, minute, second, millis);
     }
 }
